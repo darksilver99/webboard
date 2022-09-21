@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       List jsonResponse = json.decode(response.body);
       return jsonResponse.map((data) => new WebboardList.fromJson(data)).toList();
     } else {
-      throw Exception('Unexpected error occured!');
+      throw Exception('Unexpected error occureaaad!');
     }
   }
 
