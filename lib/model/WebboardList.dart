@@ -2,6 +2,8 @@ class WebboardList {
   String? id;
   String? subject;
   String? detail;
+  String? create_date;
+  String? hits;
 
   WebboardList({this.id, this.subject, this.detail});
 
@@ -9,6 +11,8 @@ class WebboardList {
     id = json['id'];
     subject = json['subject'];
     detail = json['detail'];
+    create_date = json['create_date'];
+    hits = json['hits'];
   }
 
   Map<String, dynamic> toJson() {
@@ -16,6 +20,8 @@ class WebboardList {
     data['id'] = this.id;
     data['subject'] = this.subject;
     data['detail'] = this.detail;
+    data['create_date'] = this.detail;
+    data['hits'] = this.detail;
     return data;
   }
 }
